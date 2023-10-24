@@ -1,0 +1,509 @@
+/* ==================================================== utility and root ==================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* primary */
+  --EmailBg: hsl(217, 28%, 15%);
+  --main-background: #181f2b;
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials--background: hsl(219, 30%, 18%);
+
+  /* accent */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+}
+/* ==================================================== general ==================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--EmailBg);
+  color: var(--white);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==================================================== header ==================================================== */
+
+header {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+header nav {
+  padding: 4rem 5rem;
+}
+
+ul {
+  gap: 3rem;
+}
+
+ul li {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+ul li:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* ==================================================== main ==================================================== */
+
+main {
+  width: 100%;
+}
+
+/* ==================================================== hero ==================================================== */
+
+#hero {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 8rem;
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+#hero h1 {
+  margin-top: 5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#hero p {
+  padding: 0 4rem;
+  font-size: 14px;
+  margin-top: 2.5rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+#hero button {
+  margin-top: 1.5rem;
+  border: none;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  padding: 0.8rem 5rem;
+  border-radius: 25px;
+}
+
+#hero button:hover {
+  background: var(--cyan);
+}
+
+/* ==================================================== content ==================================================== */
+
+#content {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--main-background);
+  position: relative;
+  z-index: 1;
+}
+/* ==================================================== perks ==================================================== */
+
+#perks {
+  padding: 1rem 5rem;
+  text-align: center;
+}
+
+#perks article {
+  width: 40%;
+  padding: 2rem 5rem;
+}
+
+#perks article h3 {
+  margin-top: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+#perks article p {
+  margin-top: 0.8rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+/* ==================================================== perks2 ==================================================== */
+
+#perks2 {
+  padding-top: 4rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+#perks2 img {
+  width: initial;
+}
+
+#perks2 h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+}
+
+#perks2 #p1 {
+  margin-top: 2rem;
+}
+
+#perks2 #see-fylo {
+  color: var(--cyan);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--cyan);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+#perks2 #see-fylo:hover {
+  color: rgba(255, 255, 255, 0.747);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.747);
+}
+
+/* ==================================================== comments ==================================================== */
+
+#comments {
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.747);
+  gap: 2rem;
+}
+
+#comments .article-wrap {
+  background-color: var(--EmailBg);
+  box-shadow: 0.8rem 0.5rem 1rem var(--testimonials--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem 2rem;
+  gap: 2rem;
+}
+
+#comments article section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#comments article section article h3,
+#comments article section article p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#comments article section article h3 {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+}
+
+#comments img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+#comments #Satish-comment {
+  position: relative;
+  z-index: 5;
+}
+
+#comments #Satish-comment #quotes {
+  position: absolute;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 0;
+  top: -2.5rem;
+  left: -0.5rem;
+  z-index: 2;
+}
+
+/* ==================================================== form ==================================================== */
+
+#form {
+  width: 70%;
+  position: absolute;
+  bottom: 28rem;
+  background-color: var(--EmailBg);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #09101d;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+#form h1 {
+  font-weight: 700;
+  color: var(--white);
+}
+
+#form #signup {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  position: relative;
+}
+
+#form #signup input {
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 0.9em 3em;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+#error {
+  position: absolute;
+  bottom: -2em;
+  left: 3em;
+  color: var(--light-red);
+}
+
+#form #signup #formButton {
+  border: none;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  width: 20%;
+  padding: 0.9em 2em;
+  border-radius: 25px;
+}
+
+#form #signup #button:hover {
+  background: var(--cyan);
+}
+
+/* ==================================================== footer ==================================================== */
+
+footer {
+  background-color: var(--footer-background);
+  width: 100%;
+  padding: 20rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+footer #footer-img {
+  width: 8rem;
+}
+
+.location,
+.phone,
+.aboutUs,
+.contactUs,
+.icons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.location img,
+.phone img {
+  width: 16px;
+  height: 16px;
+}
+
+.icons i {
+  display: block;
+  width: 1.9rem;
+  height: 1.9rem;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+}
+
+@media (max-width: 425px) {
+  /* ========================== header ========================== */
+  header {
+    width: 90%;
+  }
+  header img {
+    width: 5rem;
+  }
+
+  header nav {
+    padding: 2rem 0;
+  }
+
+  ul {
+    gap: 1rem;
+  }
+
+  /* ========================== hero ========================== */
+  #hero {
+    padding-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #hero img {
+    width: 80%;
+  }
+
+  #hero h1 {
+    margin-top: 2rem;
+  }
+
+  #hero p {
+    width: 90%;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  /* ========================== content ========================== */
+  #content {
+    width: 100%;
+  }
+
+  #bgImage {
+    top: 10%;
+    bottom: initial;
+    width: 100%;
+  }
+
+  /* ========================== perks ========================== */
+
+  #perks {
+    width: 100%;
+    padding: 0;
+  }
+
+  #perks article {
+    width: initial;
+  }
+
+  /* ========================== perks2 ========================== */
+
+  #perks2 {
+    width: 100%;
+    gap: 3rem;
+  }
+
+  #perks2 #stayProductive {
+    width: 100%;
+  }
+
+  #perk2 h2 {
+    font-weight: 400;
+  }
+
+  /* ========================== comments ========================== */
+
+  #comments {
+    width: 90%;
+  }
+
+  #comments .article-wrap {
+    width: 100%;
+  }
+
+  /* ========================== form ========================== */
+
+  #form {
+    width: 90%;
+    padding: 3rem 1rem;
+    bottom: 20%;
+    background-color: var(--EmailBg);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #09101d;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.747);
+  }
+
+  #form h1 {
+    font-size: 16px;
+  }
+
+  #form #signup {
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+  }
+
+  #form #signup input,
+  #form #signup #formButton {
+    width: 100%;
+  }
+  /* ========================== footer ========================== */
+  footer {
+    padding: 20rem 1.5rem 5rem;
+  }
+  footer #footer-img {
+    margin-bottom: 2rem;
+  }
+  .location,
+  .phone,
+  .aboutUs,
+  .contactUs,
+  .icons {
+    display: flex;
+    gap: 1em;
+    justify-content: initial;
+  }
+
+  .aboutUs {
+    margin-top: 2rem;
+  }
+
+  footer ul {
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+  }
+
+  .icons {
+    margin-top: 5rem;
+    justify-content: center;
+  }
+}

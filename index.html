@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+      integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- ========================================================== body ========================================================== -->
+
+  <body class="d-flex flex-column align-items-center">
+    <!-- ========================================================== header ========================================================== -->
+
+    <header>
+      <nav class="d-flex justify-content-between align-items-baseline">
+        <img src="images/logo.svg" alt="" />
+        <ul class="d-flex">
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign In</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================================================== main ========================================================== -->
+
+    <main class="d-flex flex-column align-items-center">
+      <!-- ========================================================== hero ========================================================== -->
+
+      <section id="hero">
+        <img src="images/illustration-intro.png" alt="" />
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <button>Get Started</button>
+      </section>
+
+      <!-- ========================================================== content ========================================================== -->
+
+      <section class="d-flex flex-column align-items-center" id="content">
+        <!-- ========================================================== perks ========================================================== -->
+
+        <section class="row justify-content-center" id="perks">
+          <article class="col-lg-6 col-12" id="access">
+            <img src="images/icon-access-anywhere.svg" alt="accessImage" />
+            <h3>Access your files, anywhere</h3>
+            <p>
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </article>
+          <article class="col-lg-6 col-12">
+            <img src="images/icon-security.svg" alt="security" />
+            <h3>Security you can trust</h3>
+            <p>
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </article>
+          <article class="col-lg-6 col-12">
+            <img src="images/icon-collaboration.svg" alt="collaboration" />
+            <h3>Real-time collaboration</h3>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </article>
+          <article class="col-lg-6 col-12">
+            <img src="images/icon-any-file.svg" alt="anyFile" />
+            <h3>Store any type of file</h3>
+            <p>
+              Whether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </article>
+        </section>
+
+        <!-- ========================================================== perks2 ========================================================== -->
+
+        <section
+          class="row align-items-center justify-content-between"
+          id="perks2"
+        >
+          <img
+            class="col-lg-6 col-12"
+            id="stayProductive"
+            src="images/illustration-stay-productive.png"
+            alt="stayProductive"
+          />
+          <article class="col-lg-6 col-12">
+            <h1>Stay productive, wherever you are</h1>
+            <p id="p1">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p id="p2">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+
+            <button id="see-fylo">
+              See how Fylo works
+              <img
+                style="margin-left: 5px"
+                src="images/icon-arrow.svg"
+                alt="arrow"
+              />
+            </button>
+          </article>
+        </section>
+
+        <!-- ========================================================== comments ========================================================== -->
+
+        <section class="row justify-content-center" id="comments">
+          <article class="col-lg-3 col-12 article-wrap" id="Satish-comment">
+            <img src="images/bg-quotes.png" alt="bgQuote" id="quotes" />
+            <header>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </header>
+            <section>
+              <img src="images/profile-1.jpg" alt="Satish" />
+              <article>
+                <h3>Satish Patel</h3>
+                <p>Founder & CEO, Huddle</p>
+              </article>
+            </section>
+          </article>
+          <article class="col-lg-3 col-12 article-wrap" id="Bruce-comment">
+            <header>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </header>
+            <section>
+              <img src="images/profile-2.jpg" alt="Bruce" />
+              <article>
+                <h3>Bruce McKenzie</h3>
+                <p>Founder & CEO, Huddle</p>
+              </article>
+            </section>
+          </article>
+          <article class="col-lg-3 col-12 article-wrap" id="Iva-comment">
+            <header>
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </header>
+            <section>
+              <img src="images/profile-3.jpg" alt="Iva" />
+              <article>
+                <h3>Iva Boyd</h3>
+                <p>Founder & CEO, Huddle</p>
+              </article>
+            </section>
+          </article>
+        </section>
+
+        <!-- ========================================================== form ========================================================== -->
+
+        <section id="form">
+          <h1>Get early access today</h1>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+
+          <article id="signup">
+            <input
+              id="formInput"
+              type="email"
+              placeholder="email@example.com"
+            />
+            <div id="error"></div>
+            <button id="formButton">Get Started For Free</button>
+          </article>
+        </section>
+
+        <!-- ========================================================== footer ========================================================== -->
+
+        <footer id="footer">
+          <img src="images/logo.svg" alt="logo" id="footer-img" />
+
+          <section
+            class="footer-content row justify-content-between align-items-baseline gap-3"
+          >
+            <section class="location col-lg-2 col-12">
+              <img src="images/icon-location.svg" alt="location" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </section>
+            <section class="phone col-lg-2 col-12">
+              <div class="wrap">
+                <article class="d-flex gap-3">
+                  <img src="images/icon-phone.svg" alt="phone" />
+                  <p>+1-543-123-4567</p>
+                </article>
+                <article class="d-flex gap-3">
+                  <img src="images/icon-email.svg" alt="email" />
+                  <p>example@fylo.com</p>
+                </article>
+              </div>
+            </section>
+            <section class="aboutUs col-lg-2 col-12">
+              <ul>
+                <li>About Us</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>Blog</li>
+              </ul>
+            </section>
+            <section class="contactUs col-lg-2 col-12">
+              <ul>
+                <li>Contact Us</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+              </ul>
+            </section>
+            <section class="icons col-lg-2 col-12">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </section>
+          </section>
+        </footer>
+      </section>
+    </main>
+
+    <!-- ========================================================== scripts ========================================================== -->
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
