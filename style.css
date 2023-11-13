@@ -29,6 +29,7 @@ body {
   background-color: var(--EmailBg);
   color: var(--white);
   width: 100%;
+  overflow-x: hidden;
 }
 
 a {
